@@ -5,11 +5,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 A React Application that consumes the Chuck Norris API View App =>
 https://brianngeywo.github.io/eldohub-challenge/
 
-# Running the Application Locally
+# `Running the Application Locally`
 Clone the app: git clone git@github.com:brianngeywo/eldohub-challenge.git
+
 Install packages: npm install
 
-## Available Scripts
+## `Available Scripts`
 
 In the project directory, you can run:
 
