@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import { Button, Container } from '@material-ui/core';
 
+
 export default class CategoriesList extends React.Component {
   state = {
     categories: [],
@@ -34,11 +35,16 @@ export default class CategoriesList extends React.Component {
 
   render() {
     return (
-      <Container>
-        <ul>
-          {this.state.categories.map(category => <Button variant="contained" color="primary" onClick={this.click} key={this.state.categories.id} >{category}</Button>)}<br />
-          {this.state.data.value}<br />
+      <Container maxWidth="lg">
+        <ul
+      style={{
+        boxShadow: "0 5px 8px 0 rgba(0, 0, 0, 0.3)",
+        backgroundColor: "#fafafa",
+      }}>
+          {this.state.categories.map(category => <Button onClick={this.click} key={this.state.categories.id} >{category}</Button>)}<br />
+          <br />
         </ul>
+        {this.state.data.value}
       </Container>
     )
   }
